@@ -14,7 +14,9 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        return 'ok';
+        $vehicles = Vehicle::all();
+
+        return view('dashboards.users.vehicle.index', compact('vehicles'));
     }
 
     /**
@@ -35,7 +37,11 @@ class VehicleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $vehicle = new Vehicle();
+        $vehicle->fill($request->all());
+        $vehicle->save();
+
+        return redirect()->route('vehicle.index');
     }
 
     /**

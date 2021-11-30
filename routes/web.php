@@ -49,5 +49,6 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
 
     Route::get('vehicle-request', [VehicleController::class, 'index'])->name('vehicle.index');
     Route::get('vehicle-request/create', [VehicleController::class, 'create'])->name('vehicle.create');
+    Route::post('vehicle-request', [VehicleController::class, 'store'])->name('vehicle.store');
 
 });
