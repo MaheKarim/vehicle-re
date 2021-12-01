@@ -47,5 +47,14 @@
                 </p>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a href="{{ url('admin/vehicle/all')}}" class="nav-link {{ (request()->is('admin/employee*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                    Vehicle Request All
+                </p>
+            </a>
+        </li>
     </ul>
 </nav>
