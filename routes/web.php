@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\VehcileAdminController;
 use App\Http\Controllers\VehicleController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
         Route::get('employee/create', [EmployeeController::class, 'create'])->name('employee.create');
         Route::post('employee', [EmployeeController::class, 'store'])->name('employee.store');
 
+        Route::get('vehicle/all', [VehcileAdminController::class, 'index'])->name('vehicle.index');
 
 });
 
