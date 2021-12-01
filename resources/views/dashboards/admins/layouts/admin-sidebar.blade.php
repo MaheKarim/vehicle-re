@@ -32,10 +32,18 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('admin.settings')}}" class="nav-link {{ (request()->is('admin/settings*')) ? 'active' : '' }}">
+            <a href="{{ url('admin/employee/create')}}" class="nav-link {{ (request()->is('admin/employee*')) ? 'active' : '' }}">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
-                    Settings
+                    Employee Create
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ url('admin/employees')}}" class="nav-link {{ (request()->is('admin/employee*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                    Employee All
                 </p>
             </a>
         </li>

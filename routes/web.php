@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\VehicleController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,11 @@ Route::group(['prefix'=>'admin', 'middleware'=>['isAdmin','auth','PreventBackHis
         Route::post('update-profile-info',[AdminController::class,'updateInfo'])->name('adminUpdateInfo');
         Route::post('change-profile-picture',[AdminController::class,'updatePicture'])->name('adminPictureUpdate');
         Route::post('change-password',[AdminController::class,'changePassword'])->name('adminChangePassword');
+
+        Route::get('employees', [EmployeeController::class, 'index'])->name('employee.index');
+        Route::get('employee/create', [EmployeeController::class, 'create'])->name('employee.create');
+        Route::post('employee', [EmployeeController::class, 'store'])->name('employee.store');
+
 
 });
 

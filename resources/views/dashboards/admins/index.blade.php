@@ -5,7 +5,6 @@
 
     <section class="content-header">
         <div class="container-fluid">
-            Testing
         </div>
     </section>
 
