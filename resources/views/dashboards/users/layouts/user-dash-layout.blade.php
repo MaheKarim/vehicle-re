@@ -100,7 +100,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="{{ url('user/vehicle-request')}}" class="nav-link {{ (request()->is('user/vehicle-request*')) ? 'active' : '' }}">
                     <i class="nav-icon fas fa-cog"></i>
                     <p>
-                        Vehicle Request
+                       My Vehicle Request
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ url('user/vehicle-request/create')}}" class="nav-link {{ (request()->is('user/vehicle-request*')) ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-cog"></i>
+                    <p>
+                        Create Vehicle Request
                     </p>
                 </a>
             </li>
@@ -134,7 +143,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021-2021 <a href="https://adminlte.io">JuiRod .io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
