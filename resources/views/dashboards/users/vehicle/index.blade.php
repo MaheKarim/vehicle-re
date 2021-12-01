@@ -46,10 +46,10 @@
                                         <tbody>
                                         @foreach($vehicles as $vehicle)
                                             <tr>
-                                                <td>{{ $vehicle->customer_name }}</td>
-                                                <td>{{ $vehicle->customer_phn }}</td>
-                                                <td>{{ $vehicle->car_name }} - {{ $vehicle->car_model }}</td>
-                                                <td>{{ $vehicle->created_at }}</td>
+                                                <td>{{ data_get($vehicle, "customer_name") }}</td>
+                                                <td>{{ data_get($vehicle, "customer_phn") }}</td>
+                                                <td>{{ data_get($vehicle, "car_name") }} -{{ data_get($vehicle, "car_model") }}</td>
+                                                <td>{{ data_get($vehicle, "created_at") }}</td>
                                                 <td>
                                                     <button type="button" class="btn btn-outline-primary">Edit</button>
                                                 </td>

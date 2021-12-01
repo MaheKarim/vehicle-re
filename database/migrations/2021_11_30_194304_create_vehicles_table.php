@@ -23,6 +23,7 @@ class CreateVehiclesTable extends Migration
             $table->string('car_pickup_address');
             $table->string('car_problem');
             $table->string('note')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }

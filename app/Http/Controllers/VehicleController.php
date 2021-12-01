@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class VehicleController extends Controller
 {
@@ -14,7 +16,7 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        $vehicles = Vehicle::all();
+        $vehicles = Vehicle::where('user', Auth::id());
 
         return view('dashboards.users.vehicle.index', compact('vehicles'));
     }
@@ -39,6 +41,7 @@ class VehicleController extends Controller
     {
         $vehicle = new Vehicle();
         $vehicle->fill($request->all());
+        $vehicle->user_id = Auth::id() ;
         $vehicle->save();
 
         return redirect()->route('vehicle.index');
