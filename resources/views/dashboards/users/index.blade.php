@@ -5,7 +5,7 @@
 
     <section class="content-header">
         <div class="container-fluid">
-            Rodmila & Jui
+            User Dashboard
         </div>
     </section>
 

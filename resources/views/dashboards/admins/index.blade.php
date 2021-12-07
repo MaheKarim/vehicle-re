@@ -5,6 +5,7 @@
 
     <section class="content-header">
         <div class="container-fluid">
+            Admin Dashboard
         </div>
     </section>
 
