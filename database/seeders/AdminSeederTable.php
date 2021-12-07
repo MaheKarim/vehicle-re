@@ -18,8 +18,8 @@ class AdminSeederTable extends Seeder
     {
         $user = new User();
         $user->fill([
-            'name' => 'Rod Jui',
-            'email' => 'rodmila_jui@gmail.com',
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('123456'),
             'email_verified_at' => Carbon::now(),
             'favoriteColor' => 'Black',
