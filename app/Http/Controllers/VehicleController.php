@@ -16,8 +16,8 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        $vehicles = Vehicle::where('user', Auth::id());
-
+        $authId = Auth::id();
+        $vehicles = Vehicle::where('user_id', '=', $authId)->get();
         return view('dashboards.users.vehicle.index', compact('vehicles'));
     }
 
