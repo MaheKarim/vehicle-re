@@ -36,7 +36,10 @@ class ServiceCenterController extends Controller
         $center = new ServiceCenter();
         $center->fill($request->all());
         if ($center->save()) {
-            return redirect()->action([ServiceCenterController::class, 'index'])->with('status', 'Profile updated!');
+            return response()->json([
+                'status' => 1,
+                'msg' => 'Your requested created successfully! '
+            ]);
         }
     }
 
