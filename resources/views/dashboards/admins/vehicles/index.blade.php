@@ -56,6 +56,9 @@
                                         @endforeach
                                         </tbody>
                                     </table>
+                                    <div class="d-flex justify-content-center">
+                                        {{ $vehicles->links() }}
+                                    </div>
                                 </div>
                                 <!-- /.tab-pane -->
                             </div>

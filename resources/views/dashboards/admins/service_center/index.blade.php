@@ -60,6 +60,7 @@
 
                                     </table>
                                     <div class="d-flex justify-content-center">
+                                        {{ $centers->links() }}
                                     </div>
                                 </div>
 

@@ -10,7 +10,7 @@ class ServiceCenterController extends Controller
 
     public function index()
     {
-        $centers = ServiceCenter::all();
+        $centers = ServiceCenter::paginate(12);
 
         return view('dashboards.admins.service_center.index', compact('centers'));
     }
