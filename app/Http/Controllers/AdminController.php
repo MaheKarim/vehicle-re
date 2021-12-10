@@ -6,7 +6,7 @@ use App\Models\Employee;
 use App\Models\ServiceCenter;
 use App\Models\User;
 use App\Models\Vehicle;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
