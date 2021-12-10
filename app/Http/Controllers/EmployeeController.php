@@ -41,7 +41,10 @@ class EmployeeController extends Controller
         $employee->fill($request->all());
         $employee->save();
 
-        return redirect()->route('employee.index');
+        return response()->json([
+            'status' => 1,
+            'msg' => 'Your requested created successfully! '
+        ]);
     }
 
     /**
