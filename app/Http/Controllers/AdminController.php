@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Auth;
+use App\Models\Employee;
+use App\Models\ServiceCenter;
 use App\Models\User;
+use App\Models\Vehicle;
+use Auth;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    function index(){
+    public function index()
+    {
+        $employees = Employee::count();
+        $services = ServiceCenter::count();
+        $users = User::where('role', '=', 2)->count();
+        $vehicles = Vehicle::count();
+        return view('dashboards.admins.index', compact('employees', 'services', 'users', 'vehicles'));
+    }
 
-        return view('dashboards.admins.index');
-       }
-    
        function profile(){
            return view('dashboards.admins.profile');
        }
@@ -21,7 +28,7 @@ class AdminController extends Controller
        }
 
        function updateInfo(Request $request){
-           
+
                $validator = \Validator::make($request->all(),[
                    'name'=>'required',
                    'email'=> 'required|email|unique:users,email,'.Auth::user()->id,
@@ -52,7 +59,7 @@ class AdminController extends Controller
 
            //Upload new image
            $upload = $file->move(public_path($path), $new_name);
-           
+
            if( !$upload ){
                return response()->json(['status'=>0,'msg'=>'Something went wrong, upload new picture failed.']);
            }else{
@@ -105,7 +112,7 @@ class AdminController extends Controller
            if( !$validator->passes() ){
                return response()->json(['status'=>0,'error'=>$validator->errors()->toArray()]);
            }else{
-                
+
             $update = User::find(Auth::user()->id)->update(['password'=>\Hash::make($request->newpassword)]);
 
             if( !$update ){
