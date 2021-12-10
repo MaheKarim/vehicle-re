@@ -50,9 +50,26 @@
 
         <li class="nav-item">
             <a href="{{ url('admin/vehicle/all')}}" class="nav-link {{ (request()->is('admin/employee*')) ? 'active' : '' }}">
-                <i class="nav-icon fas fa-cog"></i>
+                <i class="nav-icon fas fa-backspace"></i>
                 <p>
                     Vehicle Request All
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{ url('admin/service_center/create')}}" class="nav-link {{ (request()->is('admin/service_center*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-forward"></i>
+                <p>
+                    Service Center Create
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ url('admin/service_center/index')}}" class="nav-link {{ (request()->is('admin/employee*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-forward"></i>
+                <p>
+                    Service Center All
                 </p>
             </a>
         </li>
