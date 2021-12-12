@@ -24,6 +24,7 @@ class CreateVehiclesTable extends Migration
             $table->string('car_problem');
             $table->string('note')->nullable();
             $table->unsignedBigInteger('user_id');
+            $table->tinyInteger('status')->default(\App\Enums\Boolean::PENDING);
             $table->timestamps();
         });
     }
