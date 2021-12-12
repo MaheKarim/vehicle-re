@@ -10,7 +10,7 @@
                     <div class="card text-white bg-primary ">
                         <div class="card-header">Employee</div>
                         <div class="card-body">
-                            <h6 class="card-title">Total Employee</h6>
+                            <h6 class="card-title">Total Employees</h6>
                             <h2 class="card-text">{{ $employees }}</h2>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                     <div class="card text-white bg-secondary " >
                         <div class="card-header">Services Center</div>
                         <div class="card-body">
-                            <h5 class="card-title">Total Services Center</h5>
+                            <h5 class="card-title">Total Services Centers</h5>
                             <h2 class="card-text">{{ $services }}</h2>
                         </div>
                     </div>

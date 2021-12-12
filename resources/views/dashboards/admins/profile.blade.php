@@ -20,33 +20,33 @@
           </div>
         </div><!-- /.container-fluid -->
       </section>
-  
+
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
-  
+
               <!-- Profile Image -->
               <div class="card card-primary card-outline">
                 <div class="card-body box-profile">
                   <div class="text-center">
                     <img class="profile-user-img img-fluid img-circle admin_picture" src="{{ Auth::user()->picture }}" alt="User profile picture">
                   </div>
-  
+
                   <h3 class="profile-username text-center admin_name">{{Auth::user()->name}}</h3>
-  
+
                   <p class="text-muted text-center">Admin</p>
 
                   <input type="file" name="admin_image" id="admin_image" style="opacity: 0;height:1px;display:none">
                   <a href="javascript:void(0)" class="btn btn-primary btn-block" id="change_picture_btn"><b>Change picture</b></a>
-                  
+
                 </div>
                 <!-- /.card-body -->
               </div>
               <!-- /.card -->
-  
-          
+
+
             </div>
             <!-- /.col -->
             <div class="col-md-9">
@@ -85,7 +85,7 @@
                         </div>
                         <div class="form-group row">
                           <div class="offset-sm-2 col-sm-10">
-                            <button type="submit" class="btn btn-danger">Save Changes</button>
+                            <button type="submit" class="btn btn-danger">Save Change</button>
                           </div>
                         </div>
                       </form>
@@ -133,6 +133,6 @@
         </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
-    
+
 
 @endsection

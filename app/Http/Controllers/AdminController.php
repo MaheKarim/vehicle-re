@@ -17,6 +17,7 @@ class AdminController extends Controller
         $services = ServiceCenter::count();
         $users = User::where('role', '=', 2)->count();
         $vehicles = Vehicle::count();
+
         return view('dashboards.admins.index', compact('employees', 'services', 'users', 'vehicles'));
     }
 
