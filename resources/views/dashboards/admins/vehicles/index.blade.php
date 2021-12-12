@@ -38,6 +38,7 @@
                                             <th scope="col">Customer Name</th>
                                             <th scope="col">Customer PHN</th>
                                             <th scope="col">Car Info</th>
+                                            <th scope="col">Status</th>
                                             <th scope="col">Created At</th>
                                             <th scope="col">Action</th>
                                         </tr>
@@ -48,6 +49,7 @@
                                                 <td>{{ data_get($vehicle, "customer_name") }}</td>
                                                 <td>{{ data_get($vehicle, "customer_phn") }}</td>
                                                 <td>{{ data_get($vehicle, "car_name") }} -{{ data_get($vehicle, "car_model") }}</td>
+                                                <td>{{ trans('boolean.status.'.data_get($vehicle, "status")) }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>
                                                 <td>
                                                     <button type="button" class="btn btn-outline-primary">Edit</button>
