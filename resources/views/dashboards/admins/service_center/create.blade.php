@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Vehicle Request</h1>
+                    <h1>Service Center</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -43,7 +43,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">PHN</label>
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Phone Number</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="phone">
                                                 <span class="text-danger error-text email_error"></span>
@@ -51,7 +51,7 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Pone 2</label>
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Alternative Phone Number</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control"  name="phone_2">
                                                 <span class="text-danger error-text car_error"></span>

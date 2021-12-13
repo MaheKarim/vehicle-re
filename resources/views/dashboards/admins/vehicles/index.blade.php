@@ -64,7 +64,7 @@
                                                 <td>{{ data_get($vehicle, "note") }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>
                                                 <td>
-                                                    <button type="button" class="btn btn-outline-primary">Edit</button>
+                                                    <a href="" type="button" class="btn btn-outline-primary">Edit</a>
                                                 </td>
                                             </tr>
                                         @endforeach
