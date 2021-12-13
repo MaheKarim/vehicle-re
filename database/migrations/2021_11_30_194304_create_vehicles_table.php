@@ -22,6 +22,10 @@ class CreateVehiclesTable extends Migration
             $table->string('car_color')->nullable();
             $table->string('car_pickup_address');
             $table->string('car_problem');
+            $table->string('service_type')->nullable();
+            $table->dateTime('date')->nullable();
+            $table->time('start_time')->nullable();
+            $table->time('end_time')->nullable();
             $table->string('note')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->tinyInteger('status')->default(\App\Enums\Boolean::PENDING);
