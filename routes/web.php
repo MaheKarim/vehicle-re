@@ -48,6 +48,8 @@ Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth']], function(){
         Route::post('employee', [EmployeeController::class, 'store'])->name('employee.store');
 
         Route::get('vehicle/all', [VehcileAdminController::class, 'index'])->name('vehicle.index');
+        Route::get('vehicle/edit/{id}', [VehcileAdminController::class, 'edit'])->name('vehicle.edit');
+        Route::post('vehicle-update/{id}', [VehcileAdminController::class, 'update'])->name('vehicleNew.update');
 
         Route::get('/service_center/index', [ServiceCenterController::class, 'index'])->name('serviceCenter.index');
         Route::get('/service_center/create', [ServiceCenterController::class, 'create'])->name('serviceCenter.create');
