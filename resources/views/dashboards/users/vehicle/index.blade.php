@@ -37,7 +37,7 @@
                                         <thead>
                                         <tr>
                                             <th scope="col">Customer Name</th>
-                                            <th scope="col">Customer PHN</th>
+                                            <th scope="col">Customer Phone</th>
                                             <th scope="col">Car Info</th>
                                             <th scope="col">Service Type</th>
                                             <th scope="col">Booking Date</th>

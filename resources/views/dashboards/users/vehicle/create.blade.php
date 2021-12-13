@@ -44,7 +44,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">PHN</label>
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Phone</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" name="customer_phn">
                                                 <span class="text-danger error-text email_error"></span>
