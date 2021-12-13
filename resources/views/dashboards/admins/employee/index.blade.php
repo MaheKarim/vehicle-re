@@ -37,7 +37,7 @@
                                         <thead>
                                         <tr>
                                             <th scope="col">Employee Name</th>
-                                            <th scope="col">Employee PHN</th>
+                                            <th scope="col">Employee Phone</th>
                                             <th scope="col">Employee Mail</th>
                                             <th scope="col">Created At</th>
 {{--                                            <th scope="col">Action</th>--}}
