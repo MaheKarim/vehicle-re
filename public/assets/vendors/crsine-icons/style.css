@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'crsine';
+  src:  url('fonts/crsine3741.eot?tcq5ak');
+  src:  url('fonts/crsine3741.eot?tcq5ak#iefix') format('embedded-opentype'),
+    url('fonts/crsine3741.ttf?tcq5ak') format('truetype'),
+    url('fonts/crsine3741.woff?tcq5ak') format('woff'),
+    url('fonts/crsine3741.svg?tcq5ak#crsine') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="crsine-"], [class*=" crsine-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'crsine' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.crsine-magnifying-glass:before {
+  content: "\e900";
+}
+.crsine-shopping-cart:before {
+  content: "\e901";
+}
+.crsine-right-arrow:before {
+  content: "\e902";
+}
+.crsine-left-arrow:before {
+  content: "\e91d";
+}
+.crsine-farm:before {
+  content: "\e903";
+}
+.crsine-plus:before {
+  content: "\e904";
+}
+.crsine-mat:before {
+  content: "\e905";
+}
+.crsine-car:before {
+  content: "\e906";
+}
+.crsine-sedan-car-model:before {
+  content: "\e907";
+}
+.crsine-minivan-car:before {
+  content: "\e908";
+}
+.crsine-microbus:before {
+  content: "\e909";
+}
+.crsine-car-suv:before {
+  content: "\e90a";
+}
+.crsine-car-service:before {
+  content: "\e90b";
+}
+.crsine-car-service-1:before {
+  content: "\e90c";
+}
+.crsine-car-service-2:before {
+  content: "\e90d";
+}
+.crsine-car-wash:before {
+  content: "\e90e";
+}
+.crsine-phone-call:before {
+  content: "\e90f";
+}
+.crsine-car-service-3:before {
+  content: "\e910";
+}
+.crsine-brush:before {
+  content: "\e911";
+}
+.crsine-polish:before {
+  content: "\e912";
+}
+.crsine-car-service-4:before {
+  content: "\e913";
+}
+.crsine-seat:before {
+  content: "\e914";
+}
+.crsine-car-service-5:before {
+  content: "\e915";
+}
+.crsine-vacuum-cleaner:before {
+  content: "\e916";
+}
+.crsine-tire:before {
+  content: "\e917";
+}
+.crsine-heart:before {
+  content: "\e918";
+}
+.crsine-brake-disc:before {
+  content: "\e919";
+}
+.crsine-car-wash-1:before {
+  content: "\e91a";
+}
+.crsine-car-wash-2:before {
+  content: "\e91b";
+}
+.crsine-tire-1:before {
+  content: "\e91c";
+}

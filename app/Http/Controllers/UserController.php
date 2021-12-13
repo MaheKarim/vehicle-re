@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
+use App\Models\Vehicle;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-   function index(){
-
-    return view('dashboards.users.index');
+   public function index()
+   {
+       $vehicles = Vehicle::where('user_id', Auth::user()->id)->count();
+    return view('dashboards.users.index', compact('vehicles'));
    }
 
    function profile(){
