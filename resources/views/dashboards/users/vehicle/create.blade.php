@@ -102,16 +102,6 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label for="status" class="col-sm-2 col-form-label">Service Type</label>
-                                            <div class="col-sm-10">
-                                            <select name="service_type" id="service_type" class="form-control">
-                                                @foreach(trans('service.service_type') as $key => $item)
-                                                    <option value="{{$key}}"> {{ $item }} </option>
-                                                @endforeach
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
                                             <label for="inputEmail" class="col-sm-2 col-form-label">Date (for schedule service)</label>
                                             <div class="col-sm-10">
                                                 <input type="date" class="form-control" name="date">
