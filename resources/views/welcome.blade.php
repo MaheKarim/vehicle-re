@@ -87,7 +87,7 @@
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
 
                         <a href="{{ url('/login') }}" class="thm-btn">
-                            Appointment
+                            Login
                             <i class="far fa-arrow-alt-circle-right"></i>
                         </a><!-- /.thm-btn -->
                     </div><!-- /.main-menu__right -->
