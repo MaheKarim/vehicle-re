@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vehicle Management - Mechanic Servicing & Car Wash</title>
+    <title>Vehicle Servicing & Mechanic Finder </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/') }}assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/') }}assets/images/favicons/favicon-32x32.png" />
@@ -63,7 +63,7 @@
 
                     <div class="main-menu__logo">
                         <a href="index.html">
-                            <img src="{{ asset('/') }}assets/images/logo-dark.png" width="137" alt="Crsine - Car services html template">
+                            <img src="{{ asset('/') }}assets/images/logo-dark.png" width="137">
                         </a>
                     </div><!-- /.main-menu__logo -->
                     <ul class="main-menu__list">
@@ -119,10 +119,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
-                                <p>Welcome to Vehicle Servicing & Mechanics Finding </p>
+                                <p>Welcome to Vehicle Servicing & Mechanics Finder Web Application </p>
                                 <h2>Premium Quality <br>
                                     Vehicle Servicing</h2>
-                                <a href="{{ url('/login') }}" class="thm-btn">Order Now <i class="far fa-arrow-alt-circle-right"></i></a>
+                                <a href="{{ url('/login') }}" class="thm-btn">Login Now <i class="far fa-arrow-alt-circle-right"></i></a>
                                 <!-- /.thm-btn dynamic-radius -->
                             </div><!-- /.col-lg-7 text-right -->
                         </div><!-- /.row -->
@@ -137,8 +137,8 @@
                             <div class="col-lg-12 text-center">
                                 <p>Welcome to Vehicle Servicing</p>
                                 <h2>Premium Quality <br>
-                                    Vehicle/ Car Servicing</h2>
-                                <a href="{{ url('/login') }}" class="thm-btn">Order Now <i class="far fa-arrow-alt-circle-right"></i></a>
+                                    Vehicle Servicing</h2>
+                                <a href="{{ url('/login') }}" class="thm-btn">Get Service Now <i class="far fa-arrow-alt-circle-right"></i></a>
                                 <!-- /.thm-btn dynamic-radius -->
                             </div><!-- /.col-lg-7 text-right -->
                         </div><!-- /.row -->
@@ -169,8 +169,7 @@
                     <div class="about-five__content">
                         <div class="section-title">
                             <span class="section-title__tagline">Get to Know Us</span>
-                            <h2 class="section-title__title">Welcome to Vehicle Servicing / Car
-                                Wash Center</h2>
+                            <h2 class="section-title__title">Welcome to Vehicle Servicing & Mechanic Finder</h2>
                         </div><!-- /.section-title -->
                         <div class="about-five__summery">
                             We have 30+ years of experiences for give you better quality results.
