@@ -231,7 +231,7 @@
                                 <i class=" crsine-car-service-1"></i>
                             </div><!-- /.service-card__icon -->
                             <h3 class="service-card__title"><a href="service-details.html">
-                                    Full Service Wash
+                                    Full Vehicle Servicing
                                 </a></h3><!-- /.service-card__title -->
                             <p class="service-card__text">There are not many of passages of lorem ipsum avail isn alteration
                                 donationa in form.</p><!-- /.service-card__text -->
@@ -271,7 +271,7 @@
                                 <i class="crsine-car-wash"></i>
                             </div><!-- /.service-card__icon -->
                             <h3 class="service-card__title"><a href="service-details.html">
-                                    Express Interior
+                                    Fixing Vehicle Problem
                                 </a></h3><!-- /.service-card__title -->
                             <p class="service-card__text">There are not many of passages of lorem ipsum avail isn alteration
                                 donationa in form.</p><!-- /.service-card__text -->
@@ -284,62 +284,6 @@
         </div><!-- /.container -->
     </section><!-- /.service-home -->
 
-    <section class="about-four">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="about-four__image clearfix wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0">
-                        <img src="{{ asset('/') }}assets/images/resources/about-4-1.jpg" alt="">
-                        <div class="about-four__image-text">
-                            Crsine is Certified Quality
-                            Car Wash Company <br>
-                            <a href="about.html">
-                                Get Started
-                            </a>
-                        </div><!-- /.about-four__image-text -->
-                    </div><!-- /.about-four__image -->
-                </div><!-- /.col-lg-6 -->
-                <div class="col-xl-6">
-                    <div class="about-four__content">
-                        <div class="section-title">
-                            <span class="section-title__tagline">Here to Help You</span>
-                            <h2 class="section-title__title">We’re Ready to Wash
-                                Your Cars</h2>
-                        </div><!-- /.section-title -->
-                        <div class="about-four__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum.
-                        </div><!-- /.about-four__text -->
-
-                        <ul class="list-unstyled about-four__list">
-                            <li class="about-four__list-item">
-                                <i class="fa fa-check-circle"></i>
-                                We’re professional and certified car washers
-                            </li>
-                            <li class="about-four__list-item">
-                                <i class="fa fa-check-circle"></i>
-                                We use quality material to clean your cars
-                            </li>
-                        </ul><!-- /.lit-unstyled about-four__list -->
-                        <div class="about-two__button-box">
-                            <a href="online-booking.html" class="thm-btn">
-                                Order Now
-                                <i class="far fa-arrow-alt-circle-right"></i>
-                            </a><!-- /.thm-btn -->
-                            <div class="about-two__phone">
-                                <i class="crsine-phone-call"></i>
-                                <div class="about-two__phone-content">
-                                    <span>Call Us Anytime</span>
-                                    <a href="tel:92-666-888-0000">92 666 888 0000</a>
-                                </div><!-- /.about-two__phone-content -->
-                            </div><!-- /.about-two__phone -->
-                        </div><!-- /.about-two__button-box -->
-
-                    </div><!-- /.about-four__content -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.about-four -->
 
 
     <section class="call-to-action call-to-action__home-two jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
@@ -349,7 +293,7 @@
                 Booking System</h3>
 
             <div class="call-to-action__btn-wrap">
-                <a href="online-booking.html" class="thm-btn">
+                <a href="{{ url('/login') }}" class="thm-btn">
                     Book Appointment
                     <i class="far fa-arrow-alt-circle-right"></i>
                 </a><!-- /.thm-btn -->
@@ -417,100 +361,6 @@
             </div><!-- /.container -->
         </div><!-- /.testimonials-one__boxed -->
     </section><!-- /.testimonials-one -->
-
-
-    <section class="about-three">
-        <div class="container">
-            <div class="row flex-lg-row-reverse">
-                <div class="col-lg-6">
-                    <div class="about-three__image wow fadeInRight" data-wow-duration="1500ms">
-                        <img src="{{ asset('/') }}assets/images/resources/about-3-1.jpg" class="img-fluid" alt="">
-                    </div><!-- /.about-three__image -->
-                </div><!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="about-three__content">
-                        <div class="section-title">
-                            <span class="section-title__tagline">Find Who We Are</span>
-                            <h2 class="section-title__title">About Our Professional
-                                Car Washing Service</h2>
-                        </div><!-- /.section-title -->
-                        <div class="about-three__summery">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
-                        </div><!-- /.about-three__text -->
-
-                        <ul class="about-three__counter list-unstyled">
-                            <li class="about-three__counter-item">
-                                <i class="crsine-brush"></i>
-                                <div class="about-three__counter-content">
-                                    <h3 class="about-three__counter-number odometer" data-count="30">00</h3>
-                                    <!-- /.about-three__counter-number -->
-                                    <p class="about-three__counter-text">Year Experience</p>
-                                    <!-- /.about-three__counter-text -->
-                                </div><!-- /.about-three__counter-content -->
-                            </li>
-                            <li class="about-three__counter-item">
-                                <i class="crsine-polish"></i>
-                                <div class="about-three__counter-content">
-                                    <h3 class="about-three__counter-number odometer" data-count="10">00</h3>
-                                    <!-- /.about-three__counter-number -->
-                                    <p class="about-three__counter-text">Quality Polish</p>
-                                    <!-- /.about-three__counter-text -->
-                                </div><!-- /.about-three__counter-content -->
-                            </li>
-                            <li class="about-three__counter-item">
-                                <i class="crsine-car-service-4"></i>
-                                <div class="about-three__counter-content">
-                                    <h3 class="about-three__counter-number odometer" data-count="74">00</h3>
-                                    <!-- /.about-three__counter-number -->
-                                    <p class="about-three__counter-text">Cars Washed</p>
-                                    <!-- /.about-three__counter-text -->
-                                </div><!-- /.about-three__counter-content -->
-                            </li>
-                            <li class="about-three__counter-item">
-                                <i class="crsine-seat"></i>
-                                <div class="about-three__counter-content">
-                                    <h3 class="about-three__counter-number odometer" data-count="16">00</h3>
-                                    <!-- /.about-three__counter-number -->
-                                    <p class="about-three__counter-text">Team Members</p>
-                                    <!-- /.about-three__counter-text -->
-                                </div><!-- /.about-three__counter-content -->
-                            </li>
-                        </ul><!-- /.about-three__counter list-unstyled -->
-
-                    </div><!-- /.about-three__content -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.about-three -->
-
-    <section class="call-to-action-two jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
-        <img src="{{ asset('/') }}assets/images/backgrounds/cta-bg-2-2.jpg" class=" jarallax-img call-two-action-two__image" alt="">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-xl-6">
-                    <div class="call-to-action-two__box jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
-                        <img src="{{ asset('/') }}assets/images/backgrounds/cta-bg-2-1.jpg" alt="" class="jarallax-img">
-                        <h3 class="call-to-action-two__title">Get Complete Auto Detailing
-                            in 50% Discount Price</h3>
-                        <a href="online-booking.html" class="thm-btn">
-                            Order Now
-                            <i class="far fa-arrow-alt-circle-right"></i>
-                        </a><!-- /.thm-btn -->
-                    </div><!-- /.call-to-action-two__box -->
-                </div><!-- /.col-lg-6 -->
-                <div class="col-xl-6">
-                    <div class="call-to-action-two__box">
-                        <h3 class=" call-to-action-two__title">Only Use Quality Products
-                            for Car Servicing</h3>
-                        <a href="{{ url('/login') }}" class="thm-btn">
-                            Order Now
-                            <i class="far fa-arrow-alt-circle-right"></i>
-                        </a><!-- /.thm-btn -->
-                    </div><!-- /.call-to-action-two__box -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row no-gutters -->
-        </div><!-- /.container-fluid -->
-    </section><!-- /.call-to-action-two -->
 
 
     <footer class="main-footer">
