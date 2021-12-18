@@ -288,12 +288,12 @@
     <section class="call-to-action call-to-action__home-two jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
         <img src="{{ asset('/') }}assets/images/backgrounds/cta-bg-1-1.jpg" alt="" class="jarallax-img">
         <div class="container">
-            <h3 class="call-to-action__title">Premium Quality Online Carwash <br>
-                Booking System</h3>
+            <h3 class="call-to-action__title">Premium Quality Vehicle Servicing <br>
+                 System</h3>
 
             <div class="call-to-action__btn-wrap">
                 <a href="{{ url('/login') }}" class="thm-btn">
-                    Book Appointment
+                    Get Service
                     <i class="far fa-arrow-alt-circle-right"></i>
                 </a><!-- /.thm-btn -->
             </div><!-- /.call-to-action__btn-wrap -->
