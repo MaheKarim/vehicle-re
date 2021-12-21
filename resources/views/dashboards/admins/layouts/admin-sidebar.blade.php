@@ -73,5 +73,13 @@
                 </p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ url('admin/area')}}" class="nav-link {{ (request()->is('admin/area*')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-forward"></i>
+                <p>
+                    Area All
+                </p>
+            </a>
+        </li>
     </ul>
 </nav>

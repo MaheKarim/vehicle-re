@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\AreaController;
 use App\Http\Controllers\ServiceCenterController;
 use App\Http\Controllers\VehcileAdminController;
 use App\Http\Controllers\VehicleController;
@@ -54,6 +55,10 @@ Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth']], function(){
         Route::get('/service_center/index', [ServiceCenterController::class, 'index'])->name('serviceCenter.index');
         Route::get('/service_center/create', [ServiceCenterController::class, 'create'])->name('serviceCenter.create');
         Route::post('service_center', [ServiceCenterController::class, 'store'])->name('serviceCenter.store');
+
+        Route::get('/area', [AreaController::class, 'index'])->name('area.index');
+        Route::get('/area/create', [AreaController::class, 'create'])->name('area.create');
+        Route::post('/area/store', [AreaController::class, 'store'])->name('area.store');
 
 });
 

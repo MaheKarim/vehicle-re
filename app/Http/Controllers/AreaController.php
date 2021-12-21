@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Area;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class AreaController extends Controller
 {
@@ -14,7 +15,8 @@ class AreaController extends Controller
      */
     public function index()
     {
-        //
+        $areas = Area::paginate(15);
+        return view('dashboards.admins.area.index', compact('areas'));
     }
 
     /**
@@ -24,7 +26,7 @@ class AreaController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboards.admins.area.create');
     }
 
     /**
@@ -35,7 +37,15 @@ class AreaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $area = new Area();
+        $area->fill($request->all());
+        $area->save();
+
+        return response()->json([
+            'status' => 1,
+            'msg' => 'Your requested created successfully! '
+        ]);
+
     }
 
     /**
