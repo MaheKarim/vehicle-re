@@ -19,6 +19,7 @@ class CreateServiceCentersTable extends Migration
             $table->integer('phone')->default(11);
             $table->integer('phone_2')->default(11)->nullable();
             $table->string('mail')->nullable();
+            $table->tinyInteger('area_id');
             $table->mediumText('address');
             $table->time('start_time');
             $table->time('end_time');

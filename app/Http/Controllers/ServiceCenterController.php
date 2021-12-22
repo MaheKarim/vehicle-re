@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ServiceCenter;
+use App\Models\Area;
 use Illuminate\Http\Request;
 
 class ServiceCenterController extends Controller
@@ -11,7 +12,7 @@ class ServiceCenterController extends Controller
     public function index()
     {
         $centers = ServiceCenter::paginate(12);
-
+//        dd($centers);
         return view('dashboards.admins.service_center.index', compact('centers'));
     }
 
@@ -22,7 +23,8 @@ class ServiceCenterController extends Controller
      */
     public function create()
     {
-        return view('dashboards.admins.service_center.create');
+        $areas = Area::all();
+        return view('dashboards.admins.service_center.create', compact('areas'));
     }
 
     /**

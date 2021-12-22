@@ -37,6 +37,7 @@
                                         <tr>
                                             <th scope="col">Center Name</th>
                                             <th scope="col">Phone</th>
+                                            <th scope="col">Area</th>
                                             <th scope="col">Address Info</th>
                                             <th scope="col">Start Time</th>
                                             <th scope="col">End Time</th>
@@ -48,6 +49,7 @@
                                             <tr>
                                                 <td>{{ data_get($center, "name") }}</td>
                                                 <td>{{ data_get($center, "phone") }}</td>
+                                                <td>{{ data_get($center, "area.name") }}</td>
                                                 <td>{{ data_get($center, "address") }}</td>
                                                 <td>{{ data_get($center, "start_time") }}</td>
                                                 <td>{{ data_get($center, "end_time") }}</td>
