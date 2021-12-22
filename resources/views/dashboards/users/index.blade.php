@@ -24,9 +24,25 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+        <h3 style="align-content: center">All Service Center List</h3> <hr>
+        <div class="container-fluid">
+            @foreach($centers as $center)
+                <div class="card text-center">
+                    <div class="card-header">
+                        {{ $center->name }}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Start Time: {{ $center->start_time }} - End Time: {{ $center->end_time }}</h5>
+                        <p class="card-text"><b> Address: </b>{{ $center->area->name }}, {{ $center->address }}</p>
+                        <a href="#" class="btn btn-primary">Call: 0{{ data_get($center, "phone") }} / 0{{ data_get($center, "phone_2") }}</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        {{ data_get($center, "mail") }}
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </section>
-
 @endsection

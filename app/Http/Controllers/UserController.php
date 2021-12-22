@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Vehicle;
 use App\Models\Emergency;
+use App\Models\Vehicle;
+use App\Models\ServiceCenter;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,7 +15,9 @@ class UserController extends Controller
    {
        $vehicles = Vehicle::where('user_id', Auth::user()->id)->count();
        $emergencys = Emergency::where('user_id', Auth::user()->id)->count();
-    return view('dashboards.users.index', compact('vehicles', 'emergencys'));
+       $centers = ServiceCenter::all();
+       
+       return view('dashboards.users.index', compact('vehicles', 'emergencys', 'centers'));
    }
 
    function profile(){
