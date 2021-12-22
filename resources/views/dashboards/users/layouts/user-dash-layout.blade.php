@@ -96,10 +96,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 {{--            </a>--}}
 {{--          </li>--}}
             <li class="nav-item">
-                <a href="{{ url('user/')}}" class="nav-link {{ (request()->is('user/*')) ? 'active' : '' }}">
+                <a href="{{ route('emergency.create')}}" class="nav-link {{ (request()->is('emergency-request/*')) ? 'active' : '' }}">
                     <i class="nav-icon fas fa-bus"></i>
                     <p>
-                        Emergency Request
+                        Emergency Request Create
                     </p>
                 </a>
             </li>

@@ -18,6 +18,7 @@ class CreateEmergenciesTable extends Migration
             $table->string('user_id');
             $table->tinyInteger('status')->default(\App\Enums\Boolean::PENDING);
             $table->string('mobile');
+            $table->string('problem');
             $table->integer('area_id');
             $table->timestamps();
         });

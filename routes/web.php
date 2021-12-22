@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmergencyController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\AreaController;
 use App\Http\Controllers\ServiceCenterController;
@@ -70,5 +71,8 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
     Route::get('vehicle-request', [VehicleController::class, 'index'])->name('vehicle.index');
     Route::get('vehicle-request/create', [VehicleController::class, 'create'])->name('vehicle.create');
     Route::post('vehicle-request', [VehicleController::class, 'store'])->name('vehicle.store');
+
+    Route::get('emergency-request/create', [EmergencyController::class, 'create'])->name('emergency.create');
+    Route::post('emergency-request', [EmergencyController::class, 'store'])->name('emergency.store');
 
 });

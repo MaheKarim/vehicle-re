@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Area;
 use App\Models\Emergency;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class EmergencyController extends Controller
 {
@@ -14,7 +17,7 @@ class EmergencyController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -24,7 +27,8 @@ class EmergencyController extends Controller
      */
     public function create()
     {
-        //
+        $areas = Area::all();
+       return view('dashboards.users.emergency.create', compact('areas'));
     }
 
     /**
@@ -35,7 +39,16 @@ class EmergencyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $emergencyRequest = new Emergency();
+       $emergencyRequest->user_id = Auth::user()->name;
+       $emergencyRequest->fill($request->all());
+       $emergencyRequest->save();
+
+        return response()->json([
+            'status' => 1,
+            'msg' => 'Your requested created successfully! '
+        ]);
+
     }
 
     /**
