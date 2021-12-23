@@ -22,7 +22,6 @@ class AdminSeederTable extends Seeder
             'email' => 'admin@gmail.com',
             'password' => Hash::make('123456'),
             'email_verified_at' => Carbon::now(),
-            'favoriteColor' => 'Black',
             'picture' => 'null',
             'role' => 1,
         ]);

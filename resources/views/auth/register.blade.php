@@ -41,11 +41,6 @@
 									<input id="email" type="email" class="form-control" name="email"  placeholder="Enter email" value="{{ old('email') }}">
 									<span class="text-danger">@error('email'){{ $message }}@enderror</span>
 								</div>
-                                <div class="form-group">
-									<label for="favoriteColor">Favorite Color</label>
-									<input id="favoriteColor" type="text" class="form-control" name="favoriteColor"  placeholder="Enter favorite color">
-									<span class="text-danger">@error('favoriteColor'){{ $message }}@enderror</span>
-								</div>
 
 								<div class="form-group">
 									<label for="password">Password</label>
