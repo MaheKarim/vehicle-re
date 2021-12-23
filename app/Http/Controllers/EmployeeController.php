@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
+use App\Models\Area;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class EmployeeController extends Controller
 {
@@ -26,7 +28,8 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        return view('dashboards.admins.employee.create');
+        $areas = Area::all();
+        return view('dashboards.admins.employee.create', compact('areas'));
     }
 
     /**

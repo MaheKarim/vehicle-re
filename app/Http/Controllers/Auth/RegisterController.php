@@ -3,13 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
@@ -64,25 +62,15 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    // protected function create(array $data)
-    // {
-    //     return User::create([
-    //         'name' => $data['name'],
-    //         'email' => $data['email'],
-    //         'role'=>2,
-    //         'favoriteColor'=>$data['favoriteColor'],
-    //         'password' => Hash::make($data['password']),
-    //     ]);
-    // }
 
     function register(Request $request){
 
-         $request->validate([
+        $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-             'picture' => 'nullable',
-         ]);
+            'picture' => 'nullable',
+        ]);
 
          $user = new User();
          $user->name = $request->name;

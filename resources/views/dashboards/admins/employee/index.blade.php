@@ -39,6 +39,7 @@
                                             <th scope="col">Employee Name</th>
                                             <th scope="col">Employee Phone</th>
                                             <th scope="col">Employee Mail</th>
+                                            <th scope="col">Employee Area</th>
                                             <th scope="col">Created At</th>
 {{--                                            <th scope="col">Action</th>--}}
                                         </tr>
@@ -49,6 +50,7 @@
                                                 <td>{{ data_get($vehicle, "employee_name") }}</td>
                                                 <td>{{ data_get($vehicle, "employee_phn") }}</td>
                                                 <td>{{ data_get($vehicle, "employee_email") }}</td>
+                                                <td>{{ data_get($vehicle, "area.name") }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>
 {{--                                                <td>--}}
 {{--                                                    <button type="button" class="btn btn-outline-primary">Edit</button>--}}

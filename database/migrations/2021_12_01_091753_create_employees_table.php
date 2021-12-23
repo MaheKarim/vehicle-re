@@ -20,6 +20,7 @@ class CreateEmployeesTable extends Migration
             $table->string('employee_email')->nullable();
             $table->string('employee_address')->nullable();
             $table->string('employee_note')->nullable();
+            $table->tinyInteger('area_id')->nullable();
             $table->timestamps();
         });
     }

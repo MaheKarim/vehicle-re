@@ -76,6 +76,17 @@
                                         </div>
 
                                         <div class="form-group row">
+                                            <label  class="col-sm-2 col-form-label">Area</label>
+                                            <div class="col-sm-10">
+                                                <select id="area_id" name="area_id" class="form-control">
+                                                    @foreach($areas as $area)
+                                                        <option value="{{ $area->id }}"> {{ $area->name}}  </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
                                             <div class="offset-sm-2 col-sm-10">
                                                 <button type="submit" class="btn btn-outline-primary">Submit</button>
                                             </div>
