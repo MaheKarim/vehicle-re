@@ -14,7 +14,7 @@
 		<div class="container h-100">
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
-			
+
 					<div class="cardx fat mt-5">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
@@ -49,12 +49,12 @@
 									</button>
 								</div>
 								<div class="mt-4 text-center">
-									Don't have an account? <a href="{{route('register')}}">Create One</a>
+									Don't have an account? <a href="{{route('register')}}">Register</a>
 								</div>
 							</form>
 						</div>
 					</div>
-				
+
 				</div>
 			</div>
 		</div>

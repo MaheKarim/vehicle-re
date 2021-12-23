@@ -13,7 +13,7 @@
 		<div class="container h-100">
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
-				
+
 					<div class="cardx fat mt-4">
 						<div class="card-body">
 							<h4 class="card-title">Register</h4>
@@ -56,7 +56,7 @@
 									<label for="password-confirm">Confirm Password</label>
 									<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required data-eye placeholder="Enter confirm password">
 									<span class="text-danger">@error('password_confirmation'){{ $message }}@enderror</span>
-                                    
+
 								</div>
 
 
@@ -81,7 +81,7 @@
 							</form>
 						</div>
 					</div>
-			
+
 				</div>
 			</div>
 		</div>

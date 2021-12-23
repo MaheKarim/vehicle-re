@@ -19,7 +19,6 @@ class CreateVehiclesTable extends Migration
             $table->string('customer_phn');
             $table->string('car_name')->nullable();
             $table->string('car_model')->nullable();
-            $table->string('car_color')->nullable();
             $table->string('car_pickup_address');
             $table->string('car_problem');
             $table->string('service_type')->nullable();
