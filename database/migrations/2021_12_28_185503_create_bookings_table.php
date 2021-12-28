@@ -18,7 +18,7 @@ class CreateBookingsTable extends Migration
             $table->integer('user_id');
             $table->integer('service_center_id');
             $table->date('booking_date')->nullable();
-            $table->tinyInteger('status')->nullable();
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }

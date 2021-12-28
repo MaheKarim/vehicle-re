@@ -42,7 +42,7 @@
                         <p>  {{ data_get($center, "mail") }}</p>
                     </div>
                     <div class="card-footer text-muted">
-                        <a href="" type="submit" class="btn btn-info">Book Service Center</a>
+                        <a href="{{ route('serviceCenterBooking.create', $center->id) }}" class="btn btn-info">Book Service Center</a>
                     </div>
                 </div>
             @endforeach

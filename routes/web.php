@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\EmergencyController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\AreaController;
@@ -74,5 +75,8 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
 
     Route::get('emergency-request/create', [EmergencyController::class, 'create'])->name('emergency.create');
     Route::post('emergency-request', [EmergencyController::class, 'store'])->name('emergency.store');
+
+    Route::get('service-center-booking/create/{id}', [BookingController::class, 'create'])->name('serviceCenterBooking.create');
+    Route::post('service-center-booking', [BookingController::class, 'store'])->name('serviceCenterBooking.store');
 
 });
