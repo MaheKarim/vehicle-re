@@ -83,5 +83,5 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
 });
 
 Route::group(['prefix'=>'employee', 'middleware'=>['isEmployee','auth']], function(){
-
+    Route::get('/dashboard', [EmployeeController::class, 'index'])->name('employee.dashboard');
 });
