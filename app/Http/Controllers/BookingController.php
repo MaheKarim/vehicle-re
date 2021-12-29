@@ -39,9 +39,6 @@ class BookingController extends Controller
         $booking = new Booking();
         $booking->user_id = Auth::id();
         $booking->service_center_id = $id;
-//        $booking->fill($request->all());
-        $booking->status = $request->status;
-        $booking->booking_date = $request->booking_date;
         $booking->save();
 
         return response()->json([
