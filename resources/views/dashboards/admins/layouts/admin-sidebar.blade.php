@@ -89,5 +89,13 @@
                 </p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ url('admin/emergency-request/all_info')}}" class="nav-link {{ (request()->is('admin/emergency-request/all_info')) ? 'active' : '' }}">
+                <i class="nav-icon fas fa-plus"></i>
+                <p>
+                    Emergency Request
+                </p>
+            </a>
+        </li>
     </ul>
 </nav>

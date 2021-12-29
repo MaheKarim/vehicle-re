@@ -62,6 +62,9 @@ Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth']], function(){
         Route::get('/area/create', [AreaController::class, 'create'])->name('area.create');
         Route::post('/area/store', [AreaController::class, 'store'])->name('area.store');
 
+        Route::get('emergency-request/all_info', [EmergencyController::class, 'show'])->name('emergency.show');
+
+
 });
 
 Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHistory']], function(){

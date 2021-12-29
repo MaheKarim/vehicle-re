@@ -44,10 +44,7 @@ class EmergencyController extends Controller
        $emergencyRequest->fill($request->all());
        $emergencyRequest->save();
 
-        return response()->json([
-            'status' => 1,
-            'msg' => 'Your requested created successfully! '
-        ]);
+        return redirect()->route('admin.dashboard');
 
     }
 
@@ -57,9 +54,11 @@ class EmergencyController extends Controller
      * @param  \App\Models\Emergency  $emergency
      * @return \Illuminate\Http\Response
      */
-    public function show(Emergency $emergency)
+    public function show()
     {
-        //
+        $emergencys = Emergency::paginate();
+
+        return view('dashboards.admins.emergency.all', compact('emergencys'));
     }
 
     /**
