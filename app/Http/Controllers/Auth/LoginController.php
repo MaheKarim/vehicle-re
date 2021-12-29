@@ -35,6 +35,8 @@ class LoginController extends Controller
           }
           elseif( Auth()->user() == 2){
               return route('user.dashboard');
+          } else {
+              return route('employee.dashboard');
           }
       }
 
@@ -63,7 +65,9 @@ class LoginController extends Controller
         }
         elseif( auth()->user()->role == 2 ){
             return redirect()->route('user.dashboard');
-        }
+        } else {
+            return redirect()->route('employee.dashboard');
+           }
 
        }else{
            return redirect()->route('login')->with('error','Email and password are wrong');

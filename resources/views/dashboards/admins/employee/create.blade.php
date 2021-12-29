@@ -35,65 +35,29 @@
                                 <div class="active tab-pane" id="personal_info">
                                     <form class="form-horizontal" method="POST" action="{{ route('employee.store') }}" id="AdminInfoForm">
                                         @csrf
+
                                         <div class="form-group row">
                                             <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="employee_name">
+                                                <input type="text" class="form-control" name="name" autocomplete="false">
 
                                                 <span class="text-danger error-text name_error"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Phone</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="employee_phn">
-                                                <span class="text-danger error-text email_error"></span>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control"  name="employee_email">
+                                                <input type="text" class="form-control"  name="email" autocomplete="clear">
                                                 <span class="text-danger error-text car_error"></span>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Area</label>
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Password</label>
                                             <div class="col-sm-10">
-                                                <select id="area_id" name="area_id" class="form-control">
-                                                    @foreach($areas as $area)
-                                                        <option value="{{ $area->id }}"> {{ $area->name}}  </option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Address</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control"  name="employee_address">
-                                                <span class="text-danger error-text car_error"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Note</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control"  name="employee_note">
-                                                <span class="text-danger error-text car_error"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Area</label>
-                                            <div class="col-sm-10">
-                                                <select id="area_id" name="area_id" class="form-control">
-                                                    @foreach($areas as $area)
-                                                        <option value="{{ $area->id }}"> {{ $area->name}}  </option>
-                                                    @endforeach
-                                                </select>
+                                                <input type="password" class="form-control" name="password">
+                                                <span class="text-danger error-text email_error"></span>
                                             </div>
                                         </div>
 

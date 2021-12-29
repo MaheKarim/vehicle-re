@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Employee;
+use App\Models\User;
 use App\Models\Area;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Hash;
 
 class EmployeeController extends Controller
 {
@@ -16,7 +17,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $employees = Employee::paginate(10);
+        $employees = User::where('role', '=', 3)->paginate(10);
 
         return view('dashboards.admins.employee.index', compact('employees'));
     }
@@ -40,8 +41,10 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        $employee = new Employee();
+        $employee = new User();
         $employee->fill($request->all());
+        $employee->password = Hash::make($request->input('password'));
+        $employee->role = 3;
         $employee->save();
 
         return response()->json([

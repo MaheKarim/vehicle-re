@@ -33,9 +33,7 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
     Auth::routes();
 });
 
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 
 Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth']], function(){
         Route::get('dashboard',[AdminController::class,'index'])->name('admin.dashboard');
@@ -81,5 +79,9 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
 
     Route::get('service-center-booking/create/{id}', [BookingController::class, 'create'])->name('serviceCenterBooking.create');
     Route::post('service-center-booking', [BookingController::class, 'store'])->name('serviceCenterBooking.store');
+
+});
+
+Route::group(['prefix'=>'employee', 'middleware'=>['isEmployee','auth']], function(){
 
 });
