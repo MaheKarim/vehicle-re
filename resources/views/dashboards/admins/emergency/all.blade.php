@@ -49,7 +49,7 @@
                                         <tbody>
                                         @foreach($emergencys as $vehicle)
                                             <tr>
-                                                <td>{{ data_get($vehicle, "user.name") }}</td>
+                                                <td>{{ data_get($vehicle, "name") }}</td>
                                                 <td>{{ data_get($vehicle, "mobile") }}</td>
                                                 <td>{{ data_get($vehicle, "problem") }}</td>
                                                 <td>{{ data_get($vehicle, "address") }}</td>
