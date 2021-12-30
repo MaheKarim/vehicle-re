@@ -11,4 +11,12 @@ class Emergency extends Model
 
     protected $guarded = [' '];
 
+    public function area()
+    {
+        return $this->belongsTo(Area::class);
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -38,7 +38,7 @@ class BookingController extends Controller
     {
         $booking = new Booking();
         $booking->user_id = Auth::id();
-        $booking->service_center_id = $request->id;
+        $booking->service_center_id = 3;
         $booking->save();
 
         return response()->json([
