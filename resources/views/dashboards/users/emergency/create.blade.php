@@ -52,6 +52,14 @@
                                         </div>
 
                                         <div class="form-group row">
+                                            <label for="inputEmail" class="col-sm-2 col-form-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="address">
+                                                <span class="text-danger error-text email_error"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
                                             <label  class="col-sm-2 col-form-label">Area</label>
                                             <div class="col-sm-10">
                                                 <select id="area_id" name="area_id" class="form-control">

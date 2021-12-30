@@ -39,6 +39,7 @@
                                             <th scope="col">User Name</th>
                                             <th scope="col">Phone</th>
                                             <th scope="col">Problem</th>
+                                            <th scope="col">Address</th>
                                             <th scope="col">Area</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Created At</th>
@@ -51,6 +52,7 @@
                                                 <td>{{ data_get($vehicle, "user.name") }}</td>
                                                 <td>{{ data_get($vehicle, "mobile") }}</td>
                                                 <td>{{ data_get($vehicle, "problem") }}</td>
+                                                <td>{{ data_get($vehicle, "address") }}</td>
                                                 <td>{{ data_get($vehicle, "area.name") }}</td>
                                                 <td>{{ data_get($vehicle, "status") }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>

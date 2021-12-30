@@ -20,6 +20,7 @@ class CreateEmergenciesTable extends Migration
             $table->string('mobile');
             $table->string('problem');
             $table->integer('area_id');
+            $table->string('address');
             $table->timestamps();
         });
     }
