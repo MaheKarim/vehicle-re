@@ -49,12 +49,12 @@
                                         <tbody>
                                         @foreach($emergencys as $vehicle)
                                             <tr>
-                                                <td>{{ data_get($vehicle, "name") }}</td>
+                                                <td>{{ data_get($vehicle, "user_id") }}</td>
                                                 <td>{{ data_get($vehicle, "mobile") }}</td>
                                                 <td>{{ data_get($vehicle, "problem") }}</td>
                                                 <td>{{ data_get($vehicle, "address") }}</td>
                                                 <td>{{ data_get($vehicle, "area.name") }}</td>
-                                                <td>{{ data_get($vehicle, "status") }}</td>
+                                                <td>{{ trans('boolean.status.'.$vehicle->status) }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>
                                                 {{--                                                <td>--}}
                                                 {{--                                                    <button type="button" class="btn btn-outline-primary">Edit</button>--}}
