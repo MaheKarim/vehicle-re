@@ -27,7 +27,7 @@
                     <div class="card">
                         <div class="card-header p-2">
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#change_password" data-toggle="tab">Vehicle Service <Request></Request></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#change_password" data-toggle="tab">Service Service <Request></Request></a></li>
                             </ul>
                         </div><!-- /.card-header -->
                         <div class="card-body">

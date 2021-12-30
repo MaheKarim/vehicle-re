@@ -34,11 +34,10 @@ class BookingController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request)
     {
         $booking = new Booking();
         $booking->user_id = Auth::id();
-        $booking->service_center_id = $id;
         $booking->save();
 
         return response()->json([
