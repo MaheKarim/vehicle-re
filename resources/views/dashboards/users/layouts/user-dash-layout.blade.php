@@ -105,6 +105,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </li>
 
             <li class="nav-item">
+                <a href="{{ route('emergency.showUser')}}" class="nav-link {{ (request()->is('emergency-request/*')) ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-bus"></i>
+                    <p>
+                       My Emergency Request
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
                 <a href="{{ url('user/vehicle-request')}}" class="nav-link {{ (request()->is('user/vehicle-request*')) ? 'active' : '' }}">
                     <i class="nav-icon fas fa-cog"></i>
                     <p>

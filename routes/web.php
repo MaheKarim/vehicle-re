@@ -76,6 +76,7 @@ Route::group(['prefix'=>'user', 'middleware'=>['isUser','auth','PreventBackHisto
     Route::get('vehicle-request/create', [VehicleController::class, 'create'])->name('vehicle.create');
     Route::post('vehicle-request', [VehicleController::class, 'store'])->name('vehicle.store');
 
+    Route::get('emergency-request/user', [EmergencyController::class, 'showUser'])->name('emergency.showUser');
     Route::get('emergency-request/create', [EmergencyController::class, 'create'])->name('emergency.create');
     Route::post('emergency-request', [EmergencyController::class, 'store'])->name('emergency.store');
 
