@@ -67,9 +67,11 @@ class EmergencyController extends Controller
      * @param  \App\Models\Emergency  $emergency
      * @return \Illuminate\Http\Response
      */
-    public function edit(Emergency $emergency)
+    public function edit($id)
     {
-        //
+        $vehicle = Emergency::findOrFail($id);
+
+        return view('dashboards.admins.emergency.edit', compact('vehicle'));
     }
 
     /**
@@ -79,9 +81,13 @@ class EmergencyController extends Controller
      * @param  \App\Models\Emergency  $emergency
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Emergency $emergency)
+    public function update(Request $request, $id)
     {
-        //
+        $vehicle = Emergency::findOrFail($id);
+        $vehicle->fill($request->all());
+        $vehicle->update();
+
+        return redirect()->route('admin.dashboard');
     }
 
     /**

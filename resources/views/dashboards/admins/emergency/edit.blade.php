@@ -1,5 +1,5 @@
 @extends('dashboards.admins.layouts.admin-dash-layout')
-@section('title','Create Employee ')
+@section('title',' Emergency Request ')
 
 @section('content')
     <!-- Content Header (Page header) -->
@@ -7,12 +7,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>All Employee</h1>
+                    <h1>All Emergency Request</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Employee</li>
+                        <li class="breadcrumb-item active">Emergency Request</li>
                     </ol>
                 </div>
             </div>
@@ -27,40 +27,24 @@
                     <div class="card">
                         <div class="card-header p-2">
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#change_password" data-toggle="tab">Employee List </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#change_password" data-toggle="tab">Emergency Request</a></li>
                             </ul>
                         </div><!-- /.card-header -->
                         <div class="card-body">
                             <div class="tab-content">
                                 <div class="active tab-pane" id="personal_info">
-                                    <form class="form-horizontal" method="POST" action="{{ route('employee.store') }}" id="AdminInfoForm">
+                                    <form class="form-horizontal" method="POST" action="{{ route('emergency.update', $vehicle->id) }}" id="AdminInfoForm">
                                         @csrf
-
                                         <div class="form-group row">
-                                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                            <label for="status" class="col-sm-2 col-form-label">Status</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="name" autocomplete="false">
-
-                                                <span class="text-danger error-text name_error"></span>
+                                                <select name="status" id="status" class="form-control">
+                                                    @foreach(trans('boolean.status') as $key => $item)
+                                                        <option value="{{$key}}"> {{ $item }} </option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control"  name="email" autocomplete="clear">
-                                                <span class="text-danger error-text car_error"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="inputEmail" class="col-sm-2 col-form-label">Password</label>
-                                            <div class="col-sm-10">
-                                                <input type="password" class="form-control" name="password">
-                                                <span class="text-danger error-text email_error"></span>
-                                            </div>
-                                        </div>
-
                                         <div class="form-group row">
                                             <div class="offset-sm-2 col-sm-10">
                                                 <button type="submit" class="btn btn-outline-primary">Submit</button>

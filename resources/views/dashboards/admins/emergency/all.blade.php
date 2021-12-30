@@ -43,7 +43,7 @@
                                             <th scope="col">Area</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Created At</th>
-                                            {{--                                            <th scope="col">Action</th>--}}
+                                            <th scope="col">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -56,9 +56,9 @@
                                                 <td>{{ data_get($vehicle, "area.name") }}</td>
                                                 <td>{{ trans('boolean.status.'.$vehicle->status) }}</td>
                                                 <td>{{ data_get($vehicle, "created_at") }}</td>
-                                                {{--                                                <td>--}}
-                                                {{--                                                    <button type="button" class="btn btn-outline-primary">Edit</button>--}}
-                                                {{--                                                </td>--}}
+                                                <td>
+                                                    <a href="{{ route('emergency.edit', $vehicle->id) }}" type="button" class="btn btn-outline-primary">Edit</a>
+                                                </td>
                                             </tr>
                                         @endforeach
                                         </tbody>

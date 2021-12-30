@@ -61,6 +61,8 @@ Route::group(['prefix'=>'admin','middleware'=>['isAdmin','auth']], function(){
         Route::post('/area/store', [AreaController::class, 'store'])->name('area.store');
 
         Route::get('emergency-request/all_info', [EmergencyController::class, 'show'])->name('emergency.show');
+        Route::get('emergency-request/edit/{id}', [EmergencyController::class, 'edit'])->name('emergency.edit');
+        Route::post('emergency-request-admin', [EmergencyController::class, 'update'])->name('emergency.update');
 
 
 });
